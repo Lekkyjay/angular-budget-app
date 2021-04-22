@@ -1,0 +1,16 @@
+<form [formGroup]="service.form" (submit)="onSubmit()">
+  <input type="hidden" formControlName="id">
+  <div class="row form-wrapper">
+    <div class="col s3">
+      <input type="number" required formControlName="amount" class="white-text" placeholder="Amount" >
+    </div>
+
+    <div class="col s8">
+      <input type="text" required formControlName="description" class="white-text" placeholder="Description" >
+    </div>
+
+    <div class="col s1">
+      <button type="submit" class="button"><p>Add</p></button>
+    </div>
+  </div>
+</form>

@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+.myContainer {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+}
+@media only screen and (min-width: 601px) {
+  .myContainer {
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .myContainer {
+    width: 90%;
+  }
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.pr-10 {
+  padding-right: 10px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

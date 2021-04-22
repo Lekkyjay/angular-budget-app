@@ -1,0 +1,36 @@
+<div class="row" style="margin-bottom: 10px">  
+  <div class="col s8" 
+  [ngClass]="{ 'teal lighten-5': item?.amount >= 0, 'red lighten-4': item?.amount < 0 }"
+  style="padding: 0px">
+    <span 
+    [ngClass]="{ 'green-text': item?.amount >= 0, 'red-text': item?.amount < 0 }"
+    class="left-align" style="display:block; padding: 9px 5px">
+      {{ item?.description }}
+    </span>
+  </div>
+  <div class="col s2" [ngClass]="{ 'teal accent-1': item?.amount >= 0, 'red lighten-4': item?.amount < 0 }">
+    <span 
+    [ngClass]="{ 'green-text': item?.amount >= 0, 'red-text': item?.amount < 0 }" 
+    style="display:block; padding: 9px 0px">
+      {{ item?.amount }}
+    </span>
+  </div>
+  <div class="col s1">
+    <button 
+      type="button" 
+      (click)="onEdit(item)"
+      class="orange" 
+      style="padding: 5px; margin-left: -10px; margin-top: -1px; cursor: pointer;">
+      <i class="material-icons">edit</i>
+    </button>
+  </div>
+  <div class="col s1">
+    <button 
+      type="button" 
+      (click)="onDelete(item)"
+      class="red" 
+      style="padding: 5px; margin-left: -10px; margin-top: -1px; cursor: pointer;">
+      <i class="material-icons">delete</i>
+    </button>
+  </div>
+</div>

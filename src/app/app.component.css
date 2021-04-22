@@ -1,0 +1,9 @@
+.app-container {
+  max-width: 1000px;
+  width: 80%;
+  min-height: 80vh;
+  margin: 10% auto;
+  background: cornflowerblue;
+  border-radius: 10%;
+  overflow-x: hidden;
+}

@@ -19,7 +19,7 @@ export class BudgetService {
   budgetTotal$ = this.budgetTotal.asObservable()
 
   items = [
-    {id: '1', description: 'Web esign', amount: 550},
+    {id: '1', description: 'Web design', amount: 550},
     {id: '2', description: 'Farm products', amount: 550},
     {id: '3', description: 'Ecommerce Training', amount: 550},
     {id: '4', description: 'Travel', amount: -550},
